@@ -1,0 +1,126 @@
+/* Main container styling */
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Show box styling */
+.show_box {
+    width: 80vw;
+    background-color: #cfcfcf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Detail section styling */
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* Other details styling */
+.other_details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: start;
+}
+
+/* Button styling */
+.book_ticket, .get_details {
+    height: 50px;
+    width: 150px;
+    background-color: #7181fa;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book_ticket:hover, .get_details:hover {
+    background-color: #5561d4;
+}
+
+/* Show details styling */
+.show_details {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Ticket form styling */
+.ticketform {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url('back.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container inside the ticket form */
+.ticketform > .container {
+    max-width: 800px;
+    min-height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for inputs and selects */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .show_box {
+        width: 90vw;
+    }
+    .book_ticket, .get_details {
+        width: 100%;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .ticketform > .container {
+        width: 90%;
+    }
+}
